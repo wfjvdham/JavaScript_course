@@ -1,6 +1,6 @@
 HTML
 ========================================================
-author: Wim van der Ham
+
 
 HTML structure
 ========================================================
@@ -11,9 +11,9 @@ DOCTYPE signal to the browser that modern HTML is used
 
 **head** tag, containing information about the page without showing anything to the user
 	
-	- charset important if you want to render different languages
-	- title of the page
-	- scripts for interactivity
+- charset important if you want to render different languages
+- title of the page
+- scripts for interactivity
 
 **body** tag, renders what the user sees
 
@@ -49,3 +49,45 @@ Images
 ========================================================
 
 <img src="https://www.kasandbox.org/programming-images/animals/rabbit.png" alt="Rabbit with lop ears in barn" width="203" height="50"> 
+
+Links
+========================================================
+
+<a href="http://home.web.cern.ch/topics/birth-web">Read more about the history of HTML</a>
+
+`target="_blank"` to open the page in a new tab, use when linking to a different domain
+
+Internal Links
+========================================================
+
+<a href="#web-history">History of the web</a>
+
+<h2 id="web-history">History of the web</h2>
+
+Tables
+========================================================
+
+<table>
+    <thead>
+        <tr>
+            <th>Pet name</th>
+            <th>Species</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Black & white</td>
+            <td>rabbit</td>
+        </tr>
+    </tbody>
+</table>
+
+Comments
+========================================================
+<!-- Hello humans! -->
+
+To combine with CSS
+========================================================
+
+`<span></span>` grouping text
+`<div></div>` grouping other parts of html

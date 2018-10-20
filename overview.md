@@ -1,6 +1,6 @@
 Introduction
 ========================================================
-author: Wim van der Ham
+
 
 About Myself
 ========================================================
@@ -46,4 +46,6 @@ Development Tools
 
 - Text
 - Inspector of Browser
-- IDE
+- IDE 
+  - Webstorm
+  - VSCode
