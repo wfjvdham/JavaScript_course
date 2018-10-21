@@ -55,13 +55,13 @@ Basic HTML tags
 
 ## Unordered Lists
 
-`
+```
 <ul>
     <li>They're furry!</li>
     <li>Great listeners!</li>
     <li>Eat all your leftover carrots!</li>
 </ul>
-`
+```
 
 ***
 
@@ -73,9 +73,9 @@ Basic HTML tags
 
 ## Images
 
-`
+```
 <img src="https://www.kasandbox.org/programming-images/animals/rabbit.png" alt="Rabbit with lop ears in barn" width="203" height="50"> 
-`
+```
 
 ***
 
@@ -83,9 +83,9 @@ Basic HTML tags
 
 ## Links
 
-`
+```
 <a href="http://home.web.cern.ch/topics/birth-web">Read more about the history of HTML</a>
-`
+```
 
 ***
 
@@ -95,9 +95,9 @@ Basic HTML tags
 
 Opens the link in a new tab or page
 
-`
+```
 <a href="http://home.web.cern.ch/topics/birth-web" target="_blank">Read more about the history of HTML</a>
-`
+```
 
 ***
 
@@ -105,16 +105,15 @@ Opens the link in a new tab or page
 
 ### Internal Links
 
-`
+```
 <a href="#web-history">History of the web</a>
-`
-`
+
 <h2 id="web-history">History of the web</h2>
-`
+```
 
 ## Tables
 
-`
+```
 <table>
     <thead>
         <tr>
@@ -129,7 +128,7 @@ Opens the link in a new tab or page
         </tr>
     </tbody>
 </table>
-`
+```
 
 ***
 
@@ -150,9 +149,9 @@ Opens the link in a new tab or page
 
 ## Comments
 
-`
+```
 here there is a <!-- Hello humans! --> comment
-`
+```
 
 here there is a <!-- Hello humans! --> comment
 
