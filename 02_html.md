@@ -37,13 +37,13 @@ Basic HTML tags
 
 ## Ordered Lists
 
-`
+```
 <ol>
     <li>Bugs bunny</li>
     <li>Easter Bunny</li>
     <li>Thumper</li>
 </ol>
-`
+```
 
 ***
 
