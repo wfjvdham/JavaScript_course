@@ -42,7 +42,7 @@ Development Tools
 ## IDE
 
 - [WebStorm](https://www.jetbrains.com/webstorm/) ~100 euro per year
-- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/) with the [preview](https://marketplace.visualstudio.com/items?itemName=hdg.live-html-previewer) extension
 
 ## Browser
 
