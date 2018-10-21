@@ -1,81 +1,140 @@
 CSS
 ========================================================
 
+> Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML
+
+- Initial release 1996
 
 Syntax
 ========================================================
 
+```
 h2 {
 	color: green;
-} 
+}
+```
 
-h2 - selector
-color - property
-green - value
+**h2** selector
+**color** property
+**green** value
 
 Parameters
 ========================================================
 
-background-color
-font-family
-font-size px, em relative to the fonts size, % or words
-font-weight normal or bold
-font-style normal or italic
-text-align
-text-decoration
+## `background-color`
 
-Font Family
-========================================================
+- Keyword values: red, green, ...
+- Hexadecimal values: #bbff00, #bbff0077, ...
+- RGB value: rgb(255, 255, 128)
+
+## `font-family`
 
 - Specifies the order of search for fonts
-- Last value shoud be a keyword / system default
+- Last value should be a keyword / system default
 - Names containing multiple words should be quoted
 
+```
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+```
 
-Select by Id
+To include a non standard font on your website you can use [GoogleFonts](https://fonts.google.com/)
+
+## `font-size`
+
+- Absolute values: xx-small, x-small, ...
+- Length values: 12px, 0.8em, ...
+
+`em` is the font size relative to the parent font size
+
+## `font-weight`
+
+- Keyword values: normal, bold, ...
+- Numbers: 100, 200, ...
+
+## `font-style`
+
+- Keyword values: normal, italic, ...
+
+## `text-align`
+
+- Keyword values: left, right, center, ...
+
+## `text-decoration`
+
+- Keyword values: none, underline red, underline wavy red, ...
+
+Selectors
 ========================================================
+
+## By Id
 
 > Ids need to be unique, only one element can have a specific id
 
-<p id="song"></p>
-
+```
 #song {
-	color: green;
-} 
+  color: green;
+}
 
-Select by Class
-========================================================
+<p id="song"></p>
+``` 
+
+## By Class
+
+```
+.red-text {
+  color: red;
+}
 
 <p class="red-text"></p>
+``` 
 
-.red-text {
-	color: green;
-} 
+## By Tag
 
-Combining Selectors
-========================================================
+```
+p {
+  color: green;
+}
 
-Compining selctor for tag with class
+<p></p>
+``` 
 
+## Combining Selectors
+
+Combining selectors for tag and class
+
+### Tag `p` with class `warning`
+
+```
 p.warning {
   border: 5px solid orange;
 }
 
 <p class="warning"></p>
+```
 
+### A class `warning` inside a tag `p`
+
+```
 p .warning {
   border: 5px solid orange;
 }
 
 <p>test <div class="warning"></div></p>
+```
 
+### Multiple tags
+
+```
 h1, h2 {
   font-family: fantasy;
 }
+```
 
+### Only change a specific state of a tag
+
+```
 a:link {
   color: red;
 }
@@ -90,11 +149,12 @@ a:active {
 } 
 a:focus {
   background-color: rgb(255, 214, 255);
-} 
+}
+``` 
 
-Combining Classes
-========================================================
+### Combining Classes
 
+```
 .btn {
   font-size: 16px;
 }
@@ -107,6 +167,7 @@ Combining Classes
 
 <a class="btn btn-danger">...</a>
 <a class="btn btn-success">...</a>
+```
 
 Specificity
 ========================================================
