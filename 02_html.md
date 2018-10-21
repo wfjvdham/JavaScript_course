@@ -91,17 +91,9 @@ Basic HTML tags
 
 <a href="http://home.web.cern.ch/topics/birth-web">Read more about the history of HTML</a>
 
-### With the `target="_blank"` atribute
+### With the `target="_blank"` attribute
 
-Opens the link in a new tab or page
-
-```
-<a href="http://home.web.cern.ch/topics/birth-web" target="_blank">Read more about the history of HTML</a>
-```
-
-***
-
-<a href="http://home.web.cern.ch/topics/birth-web" target="_blank">Read more about the history of HTML</a>
+Opens the link in a new tab or page. Useful when linking to a different domain.
 
 ### Internal Links
 
@@ -158,4 +150,4 @@ here there is a <!-- Hello humans! --> comment
 ## To combine with CSS
 
 - `<span></span>` grouping text
-- `<div></div>` grouping other parts of html
+- `<div></div>` grouping other parts of HTML
