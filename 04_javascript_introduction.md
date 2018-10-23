@@ -276,3 +276,20 @@ admin.name = 'Pete'; // changed by the "admin" reference
 
 alert(user.name); // 'Pete', changes are seen from the "user" reference
 ```
+
+NodeJS & npm
+========================================================
+
+(NodeJS)[https://nodejs.org/en/]
+
+> Run-time environment used for server side JavaScript
+
+- Is asynchronous (!)
+
+(npm)[https://www.npmjs.com/]
+
+> Package manager for JavaScript
+
+## Create new project
+
+`npm init`
