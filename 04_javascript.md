@@ -1,61 +1,55 @@
 JavaScript
 ========================================================
 
-NodeJS
+> High level programming language for front and back-end development of websites
+
+- First appeared 1995
+- ECMAScript was created to standardize JavaScript
+
+Basics
 ========================================================
 
-(NodeJS)[https://nodejs.org/en/]
+## Variables
 
-npm
+> Variables are weakly typed, meaning you do not need to specify if there goes a number, string or ... inside 
 
-npm init
+- **let** value can  change
+- **const** is unchangeable, use uppercase letters
+- **var** old way of defining variables, do not use anymore see [here](https://davidwalsh.name/for-and-against-let) why
 
-npm install -g eslint
+## Naming Conventions
 
-Variables
-========================================================
+- camelCase for variables
+- snake_case for constants
+- PascalCase for classes
 
-**let** can change
-**const** unchangeble, use upercase letters
+## Values
 
-Naming
-========================================================
+- **string**, e.g. "HackYourFuture"
+- **number**, e.g. 5, or 10.6
+- **boolean**, e.g. true or false
+- **array\***, e.g. [1, 2, 3] or ['what', 'is', 'your', 'name']
+- **object**, e.g. {name: 'John', age: 24}, or the special object null
+- **function**, e.g. function () { return 4; }
+- **undefined**
 
-camelCase for variables
-snake_case for constants
-PascalCase for classes
+Using `typeof` the value of a variable can be seen
 
-Values
-========================================================
+## Operators
 
-- string, e.g. "HackYourFuture"
-- number, e.g. 5, or 10.6
-- boolean, e.g. true or false
-- array*, e.g. [1, 2, 3] or ['what', 'is', 'your', 'name']
-- object, e.g. {name: 'John', age: 24}, or the special object null
-- function, e.g. function () { return 4; }
-- undefined
+- Equality `==`
+- Inequality `!=`
+- Identity / strict equality `===` (preferred)
+- Non-identity / strict inequality `!==` (preferred)
+- Greater than operator `>`
+- Greater than or equal operator `>=`
+- Less than operator `<`
+- Less than or equal operator `<=`
+- AND `&&`
+- OR `||`
+- NOT `!`
 
-typeof
-
-Operators
-========================================================
-
-- Equality ==
-- Inequality !=
-- Identity / strict equality === (preferred)
-- Non-identity / strict inequality !== (preferred)
-- Greater than operator >
-- Greater than or equal operator >=
-- Less than operator <
-- Less than or equal operator <=
-- AND &&
-- OR ||
-- NOT !
-
-
-
-`
+```
 1 == 1 // -> true
 7 == '7' // -> true
 1 != 2  // -> true
@@ -63,34 +57,35 @@ Operators
 9 === '9'  // -> false
 3 !== 3 // -> false
 3 !== '3' // -> true
-`
+```
 
-Arithmetic
-- Addition +
-- Subtraction -
-- Multiplication *
-- Division /
-- Remainder (sometimes called modulo) %
+### Arithmetic Operators
+
+- Addition `+`
+- Subtraction `-`
+- Multiplication `*`
+- Division `/`
+- Remainder (sometimes called modulo) `%`
 
 Arrays
 ========================================================
 
-Fast for ordered items
+> Fast for working with ordered items
 
-Declaration
-========================================================
+## Declaration
 
+```
 let arr = new Array();
 let arr = [];
 let fruits = ["Apple", "Orange", "Plum"];
+```
 
-Manipulation
-========================================================
+## Manipulation
 
-- push(...items) adds items to the end.
-- pop() removes the element from the end and returns it.
-- shift() removes the element from the beginning and returns it.
-- unshift(...items) adds items to the beginning.
+- `push(...items)` adds items to the end
+- `pop()` removes the element from the end and returns it
+- `shift()` removes the element from the beginning and returns it
+- `unshift(...items)` adds items to the beginning
 
 For Loops
 ========================================================
@@ -245,3 +240,20 @@ if (year < 2015) {
 } else {
   alert( 'Exactly!' );
 }
+
+NodeJS & npm
+========================================================
+
+(NodeJS)[https://nodejs.org/en/]
+
+> Run-time environment used for server side JavaScript
+
+- Is asynchronous (!)
+
+(npm)[https://www.npmjs.com/]
+
+> Package manager for JavaScript
+
+## Create new project
+
+`npm init`
