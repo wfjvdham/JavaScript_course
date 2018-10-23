@@ -213,10 +213,6 @@ Box Model
 }
 ```
 
-***
-
-<div style="background-color: lightgrey;width: 300px;border: 25px solid green;padding: 25px;margin: 25px;">test</div>
-
 Position
 ========================================================
 
@@ -230,12 +226,16 @@ z-index the order in which the elements are drawn
 Inline CSS
 ========================================================
 
+```
 <h1 style="background: salmon; color: white;">Salmon Mania</h1>
+```
 
 Seperate Style Sheet
 ========================================================
 
+```
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/pamelafox/69f97167ba32e3473cda/raw/336006010d620847f275b0bd25bbf7c665b2e1a1/hopper.css">
+```
 
 ## Bootstrap
 
