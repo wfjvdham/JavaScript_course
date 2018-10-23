@@ -1,6 +1,13 @@
-JavaScript in the Browser
+Browser Events
 ========================================================
 
+For a nice overview of the basic events see [here](http://javascript.info/introduction-browser-events)
+
+JavaScript can use the events in the following ways
+
+## Using a HTML-attribute
+
+```
 <script>
   function countRabbits() {
     for(let i=1; i<=3; i++) {
@@ -10,18 +17,22 @@ JavaScript in the Browser
 </script>
 
 <input type="button" onclick="countRabbits()" value="Count rabbits!">
+```
 
-## DOM property
+## Using a DOM property
 
+```
 <input id="elem" type="button" value="Click me">
 <script>
   elem.onclick = function() {
     alert('Thank you');
   };
 </script>
+```
 
-## Event Listeners
+## Using an Event Listeners
 
+```
 <input id="elem" type="button" value="Click me"/>
 
 <script>
@@ -37,9 +48,11 @@ JavaScript in the Browser
   elem.addEventListener("click", handler1); // Thanks!
   elem.addEventListener("click", handler2); // Thanks again!
 </script>
+```
 
 ## Event Object
 
+```
 <input type="button" value="Click me" id="elem">
 
 <script>
@@ -49,3 +62,30 @@ JavaScript in the Browser
     alert("Coordinates: " + event.clientX + ":" + event.clientY);
   };
 </script>
+```
+
+The HTML DOM (Document Object Model)
+========================================================
+
+> When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The HTML DOM model is constructed as a tree of Objects:
+
+![DOM](pic_htmltree.gif)
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Page</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+</html>
+```
