@@ -276,3 +276,64 @@ admin.name = 'Pete'; // changed by the "admin" reference
 
 alert(user.name); // 'Pete', changes are seen from the "user" reference
 ```
+
+`map`
+========================================================
+
+> Same idea as a `for` loop but with the following advantages
+
+- No writing of a counter requered
+- No in between array
+
+```
+var tasks = [
+  {
+    'name'     : 'Write for Envato Tuts+',
+    'duration' : 120
+  },
+  {
+    'name'     : 'Work out',
+    'duration' : 60
+  },
+  {
+    'name'     : 'Procrastinate on Duolingo',
+    'duration' : 240
+  }
+];
+
+var task_names = [];
+ 
+for (var i = 0, max = tasks.length; i < max; i += 1) {
+ 
+    task_names.push(tasks[i].name);
+ 
+}
+
+var task_names = tasks.map(function (task, index, array) {
+ 
+    return task.name; 
+ 
+});
+```
+
+`filter`
+========================================================
+
+> Takes an Array and filters out values
+
+```
+var difficult_tasks = [];
+ 
+tasks.forEach(function (task) {
+    if (task.duration >= 120) {
+        difficult_tasks.push(task);
+    }
+});
+
+var difficult_tasks = tasks.filter(function (task) {
+    return task.duration >= 120;
+});
+ 
+// Using ES6
+var difficult_tasks = tasks.filter((task) => task.duration >= 120 );
+```

@@ -7,6 +7,7 @@
 
 - http://roverjs.com/
 - https://www.freecodecamp.org/
+- https://www.codewars.com/collections/fun-fun-fundamentals
 
 # HTML & CSS
 
