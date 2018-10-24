@@ -102,7 +102,7 @@ let fruits = ["Apple", "Orange", "Plum"];
 - `shift()` removes the element from the beginning and returns it
 - `unshift(...items)` adds items to the beginning
 
-![array speed](array_speed.png)
+![array speed](array-speed.png)
 
 Loops
 ========================================================
