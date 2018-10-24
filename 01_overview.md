@@ -47,6 +47,7 @@ Development Tools
 ## Browser
 
 - Inspector
+  - Chrome using sources and `esc` for console
 
 ## Version Control
 
