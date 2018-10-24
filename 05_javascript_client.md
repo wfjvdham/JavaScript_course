@@ -89,3 +89,17 @@ document.getElementById("demo").innerHTML = "Hello World!";
 </body>
 </html>
 ```
+
+Code Formatting
+========================================================
+
+Human readable code need to have:
+
+- Clear variable and function names
+- Indenting, after `{`
+- Blank lines, to seperate code blocks
+- Spacing after keywords, `,` and mathematical operators
+
+This is easier when using a ESLint [tool](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+After that somtimes **minification** is used to compres the code and transfer it faster on the internet
