@@ -1,19 +1,15 @@
-NodeJS
+[NodeJS](https://nodejs.org/en/)
 ========================================================
 
 > Run-time environment used for server side JavaScript
 
-[NodeJS](https://nodejs.org/en/)
-
 - Initial release 2009
 - Is asynchronous (!)
 
-`npm`
+[`npm`](https://www.npmjs.com/)
 ========================================================
 
 > Package manager for JavaScript
-
-[npm](https://www.npmjs.com/)
 
 - Command line client
 - Online database of packages
@@ -30,12 +26,10 @@ Instal a new package that you can call in your javascript file using `require`
 npm install --save express
 ```
 
-`express`
+[`express`](https://expressjs.com/)
 ========================================================
 
 > The default web application framework for NodeJS. 
-
-[Express](https://expressjs.com/)
 
 - Minimalistic with many optional plugins
 
@@ -66,4 +60,4 @@ node server.js
 ```
 and go to `localhost:3000` in your browser
 
-
+continue the tutorial [here](https://codeburst.io/build-a-weather-website-in-30-minutes-with-node-js-express-openweather-a317f904897b)
