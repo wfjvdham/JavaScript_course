@@ -5,6 +5,7 @@ JavaScript
 
 - First appeared 1995
 - ECMAScript was created to standardize JavaScript
+- (Style Guide)[https://www.w3schools.com/js/js_conventions.asp]
 
 Basics
 ========================================================
