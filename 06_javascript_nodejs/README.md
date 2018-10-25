@@ -3,7 +3,7 @@ NodeJS
 
 > Run-time environment used for server side JavaScript
 
-(NodeJS)[https://nodejs.org/en/]
+[NodeJS](https://nodejs.org/en/)
 
 - Initial release 2009
 - Is asynchronous (!)
@@ -13,7 +13,7 @@ NodeJS
 
 > Package manager for JavaScript
 
-(npm)[https://www.npmjs.com/]
+[npm](https://www.npmjs.com/)
 
 - Command line client
 - Online database of packages
@@ -35,7 +35,7 @@ npm install --save express
 
 > The default web application framework for NodeJS. 
 
-(Express)[https://expressjs.com/]
+[Express](https://expressjs.com/)
 
 - Minimalistic with many optional plugins
 
