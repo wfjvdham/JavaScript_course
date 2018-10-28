@@ -13,20 +13,40 @@ SQLite
 
 - An SQL database is structured like one or multiple tables
 - The types and the structure needs to be defined before
-- Uses SQL query language where the most important SQL verbs are: 
-  - `SELECT` to specify which columns you want from a table
-  - `FROM` to specify from which table you want to retrieve data
-  - `WHERE` to specify some conditions for your selection
-  - `INSERT` to insert new data
-  - `DELETE` to delete some data
-  - `UPDATE` to change some existing data
-  - `CREATE TABLE` to create a new table
+
+## Comands
+
+SQLite uses SQL query language where the most important SQL verbs are:
+
+### Create
+
+- `CREATE TABLE` to create a new table  
+- `INSERT` to insert new data
+
+### Read
+
+- `SELECT` to specify which columns you want from a table
+- `FROM` to specify from which table you want to retrieve data
+- `WHERE` to specify some conditions for your selection
+  
+### Update  
+
+- `UPDATE` to change some existing data
+
+### Delete
+
+- `DELETE` to delete some data
+
 
 In `index.js` you can find some examples using the verbs from above.
 
 ## `serialize()`
 
 When the order of the queries is important you have to use the `serialize()` function. This function will ensure that the queries run in order.
+
+## GUI
+
+[DB Browser for SQLite](http://sqlitebrowser.org/)
 
 MongoDB
 ========================================================
@@ -47,3 +67,31 @@ Windows
 Ubuntu
 
 `sudo service mongod start`
+
+## Commands
+
+### Create
+
+- `db.createCollection()` to create a collection
+- `db.collection.insertMany()` to insert multiple documents
+- `db.collection.insertOne()` to insert one document
+
+### Read
+
+- `db.inventory.find( {} )` to get all documents
+- `db.inventory.find( { status: "D" } )` to get the documents that match the conditions
+
+### Update
+
+- `db.collection.updateOne()` to update one document
+- `db.collection.updateMany()`  to update many documents
+- `db.collection.replaceOne()` replace one document
+
+### Delete
+
+- `db.collection.deleteOne()` to delete one document
+- `db.collection.deleteMany()` to delete many documents
+
+## GUI
+
+[RoboMongo](https://robomongo.org/)
