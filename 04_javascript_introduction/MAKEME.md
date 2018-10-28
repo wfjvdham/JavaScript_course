@@ -84,4 +84,4 @@ const tasks = monday.concat(tuesday);
 
 1. Map the tasks to durations in hours.
 1. Filter out everything that took less than two hours (i.e., remove from the collection)
-1. Multiply the each duration by a per-hour rate for billing (you can decide yourself what Maartje should earn per hour) and sum it all up.
+1. Multiply each duration by a per-hour rate for billing (you can decide yourself what Maartje should earn per hour) and sum it all up.
