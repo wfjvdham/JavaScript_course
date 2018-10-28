@@ -23,9 +23,8 @@ JavaScript Exersices
 1. Create an object and a function that takes the object as a parameter and prints out all of its properties and values.
 1. Create a function named `vehicleType` that receives a color, and a code, 1 for car, 2 for motorbike. And prints 'a blue motorbike' for example when called as `vehicleType("blue", 2)`
 1. Make a list of vehicles, you can add "motorbike", "caravan", "bike", or more.
-1. Change the function vehicle to use the list of the previous question. So that `vehicle("green", 3, 1)` prints "a green new bike".
-1. Use the list of vehicles to write an advertisement. So that it prints something like: "Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes.". (Hint: use a for loop.)
-1. Hint, the output should be correct English with all the punctuation in place (that's the challenge). So plurals for the vehicle types, commas followed by a single space, the word and to replace the final comma and closed off by a period.
+1. Change the function vehicle to use the list of the previous question. So that `vehicle("green", 3)` prints "a green bike".
+1. Use the list of vehicles to write an advertisement. So that it prints something like: "Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes.". (Hint: use a for loop.) The output should be correct English with all the punctuation in place (that's the challenge). So plurals for the vehicle types, commas followed by a single space, the word and to replace the final comma and closed off by a period.
 1. What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 10?
 
 ## Debugging
