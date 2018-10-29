@@ -295,7 +295,7 @@ alert(user.name); // 'Pete', changes are seen from the "user" reference
 
 > Same idea as a `for` loop but with the following advantages
 
-- No writing of a counter requered
+- No writing of a counter required
 - No in between array
 
 ```

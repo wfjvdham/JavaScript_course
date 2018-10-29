@@ -61,3 +61,9 @@ node server.js
 and go to `localhost:3000` in your browser
 
 continue the tutorial [here](https://codeburst.io/build-a-weather-website-in-30-minutes-with-node-js-express-openweather-a317f904897b)
+
+Callback
+========================================================
+
+> Some executable code that is pased to a function as a argument and that is expected to run after the function is finished
+

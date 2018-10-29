@@ -1,4 +1,4 @@
-Resposiveness
+Responsiveness
 ========================================================
 
 From [wiki](https://en.wikipedia.org/wiki/Responsive_web_design)

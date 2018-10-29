@@ -14,7 +14,7 @@ SQLite
 - An SQL database is structured like one or multiple tables
 - The types and the structure needs to be defined before
 
-## Comands
+## Commands
 
 SQLite uses SQL query language where the most important SQL verbs are:
 
@@ -64,7 +64,7 @@ Windows
 
 
 
-Ubuntu
+**Ubuntu**
 
 `sudo service mongod start`
 

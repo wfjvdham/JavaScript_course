@@ -10,7 +10,6 @@ The following is a list of topics I still need to add:
 - SQLite http://www.sqlitetutorial.net/sqlite-nodejs/connect/
 - DateTime https://moment.github.io/luxon/docs/manual/tour.html
 - Multidimensionale arrays
-- sort array
 - jQuery
 - cookies https://www.tutorialspoint.com/javascript/javascript_cookies.htm
 - data validation
@@ -24,3 +23,4 @@ The following is a list of topics I still need to add:
 - React
 - Angular
 - Vue
+- XMLHttpRequest
