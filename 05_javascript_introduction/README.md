@@ -105,6 +105,18 @@ let fruits = ["Apple", "Orange", "Plum"];
 
 ![array speed](array-speed.png)
 
+## Sorting
+
+Using a function directly on the array
+
+```
+//from small to big
+fruits.sort();
+
+//from big to small
+fruits.reverse();
+```
+
 Loops
 ========================================================
 

@@ -6,8 +6,8 @@ JavaScript Exersices
 1. Use `console.log()` to print some messages
 1. Fix the next syntax error `console.log('I'm awesome');`
 1. Declare a variable `x` and assign it a number. Print the number and the description in words
-1. Declare a varibale `y` and assign it a string. Print the variable and a description of what it will be
-1. Declare an array with your favourite animals. Use `push()` and `pop()` to remove and add some animals. Use `shift()` and `unshift()` to do the same.
+1. Declare a variable `y` and assign it a string. Print the variable and a description of what it will be
+1. Declare an array with your favorite animals. Use `push()` and `pop()` to remove and add some animals. Use `shift()` and `unshift()` to do the same.
 1. Write a program that checks the types of two variables and prints out SAME TYPE if they are the same type.
 
 ## Arrays
@@ -15,6 +15,7 @@ JavaScript Exersices
 1. Show in code if: you can store multiple types in an array? 
 1. Find a way to make the next string more readable `let myString = "hello,this,is,a,difficult,to,read,sentence";`
 1. Add `meerkat` to the next array between blowfish and capricorn `let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];`
+1. Sort the array alphabetically. 
 
 ## Functions
 
@@ -34,7 +35,7 @@ JavaScript Exersices
 ## `map` & `filter`
 
 1. Write a program that doubles the odd numbers in an array and throws away the even number. Use a `for` loop.
-1. Now write it using the `map` and `filter` funtions
+1. Now write it using the `map` and `filter` functions
 
 ```
 const monday = [
