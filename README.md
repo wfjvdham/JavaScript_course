@@ -21,7 +21,5 @@ The following is a list of topics I still need to add:
     - Arrow functions
     - Symbols, Maps
 - API Postman
-- React
-- Angular
 - Vue
 - XMLHttpRequest
