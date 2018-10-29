@@ -67,3 +67,44 @@ Callback
 
 > Some executable code that is pased to a function as a argument and that is expected to run after the function is finished
 
+```
+$('button').click(function(){
+  console.log("One");
+  $('.firstChild').show(function(){
+    console.log("Two");
+    $('.childofChild').show();
+  });
+  console.log("Three");
+});
+//“One”, “Three”, “Two” 
+```
+
+## Callback hell
+
+When some funcitons are required to run asynchronous it is possible to nest a lot of callbacks. However, this becomes quickly unreadable:
+
+```
+var p_client = new Db('integration_tests_20', new Server("127.0.0.1", 27017, {}), {'pk':CustomPKFactory});
+p_client.open(function(err, p_client) {
+    p_client.dropDatabase(function(err, done) {
+        p_client.createCollection('test_custom_key', function(err, collection) {
+            collection.insert({'a':1}, function(err, docs) {
+                collection.find({'_id':new ObjectID("aaaaaaaaaaaa")}, function(err, cursor) {
+                    cursor.toArray(function(err, items) {
+                        test.assertEquals(1, items.length);
+
+                        // Let's close the db
+                        p_client.close();
+                    });
+                });
+            });
+        });
+    });
+});
+```
+
+When you encounter this problem you have some solutions:
+
+1. Name your callback functions and declare them elsewhere.
+1. Put some code in a module and import the module.
+1. Use a library like [async](caolan.github.io/async/)

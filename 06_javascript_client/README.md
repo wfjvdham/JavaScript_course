@@ -103,3 +103,8 @@ Human readable code need to have:
 This is easier when using a ESLint [tool](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 After that sometimes **minification** is used to compress the code and transfer it faster on the Internet.
+
+jQuery
+========================================================
+
+To make using the DOM object easier you can use the [jQuery](https://jquery.com/) library
