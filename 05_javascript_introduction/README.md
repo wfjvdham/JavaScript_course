@@ -4,8 +4,15 @@ JavaScript
 > High level programming language for front and back-end development of websites
 
 - First appeared 1995
-- ECMAScript was created to standardize JavaScript
-- [Style Guide](https://www.w3schools.com/js/js_conventions.asp)
+
+ECMAScript
+========================================================
+
+A really good overview of the exact defenition of ECMAScript and related concepts can be found [here](https://medium.freecodecamp.org/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5). But the basics are:
+
+- **Ecma International** an organization that creates standards for technologies.
+- **ECMAScript 6** it is the sixth edition of the ECMA-262 standard, and features major changes and improvements to the ECMAScript specification
+- **JavaScript** a general purpose scripting language that conforms to the ECMAScript specification.
 
 Basics
 ========================================================
