@@ -54,7 +54,7 @@ MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
   let dbo = db.db("mydb");
   // retrieve a collection reference
   dbo.collection('customers', function(err, collectionref) { 
-    collectionref.updateOne(
+    scollectionref.updateOne(
       { "name" : "Wim" },
       { $set: { "age" : "29" } }
    );
