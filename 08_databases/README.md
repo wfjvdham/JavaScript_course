@@ -8,6 +8,8 @@ Many different options but the two popular combinations with JavaScript are:
 1. SQL Database, for example [SQLite](http://www.sqlitetutorial.net/sqlite-nodejs)
 1. [MongoDB](https://www.mongodb.com/)
 
+WE only look at the [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations for now because those are the most basic for a persistent storage.
+
 SQLite
 ========================================================
 
@@ -38,7 +40,7 @@ SQLite uses SQL query language where the most important SQL verbs are:
 - `DELETE` to delete some data
 
 
-In `index.js` you can find some examples using the verbs from above.
+In `sqlite.js` you can find some examples using the verbs from above.
 
 ## `serialize()`
 
@@ -57,12 +59,13 @@ MongoDB
 - Stores (JSON) documents
 - Does not uses tables
 
+MongoDB is very flexible and unstructured. To add some structure the schema's from [mongoose](https://mongoosejs.com/) can be used.
 
 ## Starting MongoDB
 
 Windows
 
-
+`C:\Program Files\MongoDB\Server\3.2\bin\mongod`
 
 **Ubuntu**
 
@@ -92,6 +95,9 @@ Windows
 - `db.collection.deleteOne()` to delete one document
 - `db.collection.deleteMany()` to delete many documents
 
+In `mongodb.js` you can find some examples using the verbs from above.
+
 ## GUI
 
 [RoboMongo](https://robomongo.org/)
+
