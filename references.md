@@ -9,6 +9,10 @@
 - https://www.freecodecamp.org/
 - https://www.codewars.com/collections/fun-fun-fundamentals
 
+## OOJS
+
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
+
 ## NodeJS
 
 - https://nodeschool.io/
