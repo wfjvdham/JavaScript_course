@@ -9,6 +9,8 @@ Object-oriented programming
 
 ## Concepts
 
+- **Encapsulation** each object keeps its state (variables/ attributes) inside a class together with some functionalities that are typical for this object
+- **Abstraction** hiding unnecessary details from the user
 - **Composition** *has-a* relationship
 - **Inheritance** *is-type-of* relationship, using the `prototype` it can use the functions from other objects
 - **Delegation** attributes and methods are accessible by a child object
@@ -125,8 +127,19 @@ class Teacher extends Person {
     return this._subject;
   }
 
+<<<<<<< HEAD
   set subject(newSubject) {
     this._subject = newSubject;
   }
 }
 ```
+=======
+- No classes exists only objects.
+- Objects link to exactly one other object.
+- 
+
+Inheritance vs delegation
+========================================================
+
+https://javascriptweblog.wordpress.com/2010/12/22/delegation-vs-inheritance-in-javascript/
+>>>>>>> 746c56102394c49df726438c0f0ff0851838202e
