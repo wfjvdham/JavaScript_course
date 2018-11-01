@@ -127,19 +127,8 @@ class Teacher extends Person {
     return this._subject;
   }
 
-<<<<<<< HEAD
   set subject(newSubject) {
     this._subject = newSubject;
   }
 }
 ```
-=======
-- No classes exists only objects.
-- Objects link to exactly one other object.
-- 
-
-Inheritance vs delegation
-========================================================
-
-https://javascriptweblog.wordpress.com/2010/12/22/delegation-vs-inheritance-in-javascript/
->>>>>>> 746c56102394c49df726438c0f0ff0851838202e
