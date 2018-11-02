@@ -22,3 +22,4 @@
 1. See if you can access the attribute in your person objects.
 1. Make some Teachers that inherit from the person class.
 1. Give the teacher class a new `greeting` function that greets in a more formal way
+1. Create a new class Address and let all the persons have an address. Try to see if it is possible to have two teachers living on the same address and see what happens if you change the address. 
