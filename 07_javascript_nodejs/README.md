@@ -108,6 +108,15 @@ When you encounter this problem you have some solutions:
 1. Name your callback functions and declare them elsewhere.
 1. Put some code in a module and import the module.
 1. Use a library like [async](caolan.github.io/async/)
+1. Use [Promises](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)
+
+### Promises
+
+An object that can have three states:
+
+1. **pending:** Initial Case where promise instantiated.
+1. **fulfilled:** Success Case which means promise resolved.
+1. **rejected:** Failure Case which means promise rejected.
 
 Using seperate files
 ========================================================
