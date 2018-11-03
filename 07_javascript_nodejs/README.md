@@ -12,7 +12,7 @@
 > Package manager for JavaScript
 
 - Command line client
-- Online database of packages
+- On line database of packages
 
 ## Create new project
 
@@ -20,7 +20,7 @@
 npm init
 ```
 
-Instal a new package that you can call in your javascript file using `require`
+Install a new package that you can call in your JavaScript file using `require`
 
 ```
 npm install --save express
@@ -31,7 +31,7 @@ npm install --save express
 
 > The default web application framework for NodeJS. 
 
-- Minimalistic with many optional plugins
+- Minimalistic with many optional plug-ins
 
 ## Hello, World
 
@@ -51,7 +51,7 @@ app.listen(3000, function () {
 - `require` includes the express package
 - Create an `app` instance by invoking `express()`
 - `app.get('/'...` what happens if you go to the root of the page
-- `app.listen(...` creates a server that lsitens to a specific port
+- `app.listen(...` creates a server that listens to a specific port
 
 Start the server by running 
 
@@ -65,7 +65,7 @@ continue the tutorial [here](https://codeburst.io/build-a-weather-website-in-30-
 Callback
 ========================================================
 
-> Some executable code that is pased to a function as a argument and that is expected to run after the function is finished
+> Some executable code that is passed to a function as a argument and that is expected to run after the function is finished
 
 ```
 $('button').click(function(){
@@ -108,3 +108,8 @@ When you encounter this problem you have some solutions:
 1. Name your callback functions and declare them elsewhere.
 1. Put some code in a module and import the module.
 1. Use a library like [async](caolan.github.io/async/)
+
+Using seperate files
+========================================================
+
+When your project starts to grow it is wise to put your code in separate files. These files can be used by other files using the `require()` function. The require functions imports the `exports` object of that file. So if you want to use functions from that file you have to assign them to the `exports` object.
