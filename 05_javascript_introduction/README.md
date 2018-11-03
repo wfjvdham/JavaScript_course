@@ -11,7 +11,7 @@ ECMAScript
 A really good overview of the exact defenition of ECMAScript and related concepts can be found [here](https://medium.freecodecamp.org/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5). But the basics are:
 
 - **Ecma International** an organization that creates standards for technologies.
-- **ECMAScript 6** it is the sixth edition of the ECMA-262 standard, and features major changes and improvements to the ECMAScript specification
+- **[ECMAScript 6](https://www.ecma-international.org/ecma-262/)** it is the sixth edition of the ECMA-262 standard, and features major changes and improvements to the ECMAScript specification
 - **JavaScript** a general purpose scripting language that conforms to the ECMAScript specification.
 
 Basics
