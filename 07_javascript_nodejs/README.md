@@ -14,6 +14,29 @@
 - Command line client
 - On line database of packages
 
+[`nvm`](https://github.com/creationix/nvm)
+========================================================
+
+> Node Version Manager is a useful package if you need different versions of node for different projects
+
+To install the latest version:
+
+```
+nvm install node
+```
+
+To use a specific version:
+
+```
+nvm use node
+```
+
+To see all the versions installed:
+
+```
+nvm ls
+```
+
 ## Create new project
 
 ```
@@ -81,7 +104,7 @@ $('button').click(function(){
 
 ## Callback hell
 
-When some funcitons are required to run asynchronous it is possible to nest a lot of callbacks. However, this becomes quickly unreadable:
+When some functions are required to run asynchronous it is possible to nest a lot of callbacks. However, this becomes quickly unreadable:
 
 ```
 var p_client = new Db('integration_tests_20', new Server("127.0.0.1", 27017, {}), {'pk':CustomPKFactory});
