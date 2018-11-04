@@ -85,67 +85,7 @@ and go to `localhost:3000` in your browser
 
 continue the tutorial [here](https://codeburst.io/build-a-weather-website-in-30-minutes-with-node-js-express-openweather-a317f904897b)
 
-Callback
-========================================================
-
-> Some executable code that is passed to a function as a argument and that is expected to run after the function is finished
-
-```
-$('button').click(function(){
-  console.log("One");
-  $('.firstChild').show(function(){
-    console.log("Two");
-    $('.childofChild').show();
-  });
-  console.log("Three");
-});
-//“One”, “Three”, “Two” 
-```
-
-## Callback hell
-
-When some functions are required to run asynchronous it is possible to nest a lot of callbacks. However, this becomes quickly unreadable:
-
-```
-var p_client = new Db('integration_tests_20', new Server("127.0.0.1", 27017, {}), {'pk':CustomPKFactory});
-p_client.open(function(err, p_client) {
-    p_client.dropDatabase(function(err, done) {
-        p_client.createCollection('test_custom_key', function(err, collection) {
-            collection.insert({'a':1}, function(err, docs) {
-                collection.find({'_id':new ObjectID("aaaaaaaaaaaa")}, function(err, cursor) {
-                    cursor.toArray(function(err, items) {
-                        test.assertEquals(1, items.length);
-
-                        // Let's close the db
-                        p_client.close();
-                    });
-                });
-            });
-        });
-    });
-});
-```
-
-When you encounter this problem you have some solutions:
-
-1. Name your callback functions and declare them elsewhere.
-1. Put some code in a module and import the module.
-1. Use a library like [async](caolan.github.io/async/)
-1. Use [Promises](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)
-
-**Note** starting from ES7 Promises can be combined with the `async` and `await` keywords 
-
-### Promises
-
-Good basic explanation about promises can be found [here](https://scotch.io/tutorials/javascript-promises-for-dummies)
-
-A promise is an object that can have three states:
-
-1. **pending:** Initial Case where promise instantiated.
-1. **fulfilled:** Success Case which means promise resolved.
-1. **rejected:** Failure Case which means promise rejected.
-
-Using seperate files
+Using separate files
 ========================================================
 
 When your project starts to grow it is wise to put your code in separate files. These files can be used by other files using the `require()` function. The require functions imports the `exports` object of that file. So if you want to use functions from that file you have to assign them to the `exports` object.
