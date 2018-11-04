@@ -18,6 +18,10 @@
 - https://nodeschool.io/
 - https://codeburst.io/build-a-weather-website-in-30-minutes-with-node-js-express-openweather-a317f904897b
 
+## Promise
+
+- https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53
+
 ### SQL
 
 - https://www.c-sharpcorner.com/article/how-to-connect-sqlite-with-node-js/
