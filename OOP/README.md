@@ -16,6 +16,48 @@ Object-oriented programming
 - **Delegation** attributes and methods are accessible by a child object
 - **Polymorphism** when multiple object types implement the same functionality
 
+## Basic Instantiation
+
+```
+let user = {     // an object
+  name: "John",  // by key "name" store value "John"
+  age: 30        // by key "age" store value 30
+};
+```
+
+### Computed properties
+
+```
+let fruit = prompt("Which fruit to buy?", "apple");
+let bag = {};
+
+// take property name from the fruit variable
+bag[fruit] = 5;
+```
+
+### Property value shorthand
+
+```
+function makeUser(name, age) {
+  return {
+    name: name,
+    age: age
+    // ...other properties
+  };
+}
+
+let user = makeUser("John", 30);
+alert(user.name); // John
+
+function makeUser(name, age) {
+  return {
+    name, // same as name: name
+    age   // same as age: age
+    // ...
+  };
+}
+```
+
 ## Constructor function
 
 - Function that takes some arguments and set them to the attributes of `this`
@@ -131,4 +173,42 @@ class Teacher extends Person {
     this._subject = newSubject;
   }
 }
+```
+
+## `in`
+
+```
+let user = { name: "John", age: 30 };
+
+alert( "age" in user ); // true, user.age exists
+alert( "blabla" in user ); // false, user.blabla doesn't exist
+```
+
+## `in` loop
+
+```
+let user = {
+  name: "John",
+  age: 30,
+  isAdmin: true
+};
+
+for(let key in user) {
+  // keys
+  alert( key );  // name, age, isAdmin
+  // values for the keys
+  alert( user[key] ); // John, 30, true
+}
+```
+
+**When an object variable is copied – the reference is copied, the object is not duplicated.**
+
+```
+let user = { name: 'John' };
+
+let admin = user;
+
+admin.name = 'Pete'; // changed by the "admin" reference
+
+alert(user.name); // 'Pete', changes are seen from the "user" reference
 ```
