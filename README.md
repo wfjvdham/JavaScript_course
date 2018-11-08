@@ -25,6 +25,5 @@ The following is a list of topics I still need to add:
 
 ## Options for Case
 
-easy - https://github.com/Eslamunto/ProductsApp
+easy - https://github.com/Eslamunto/ProductsApp, https://codeburst.io/writing-a-crud-app-with-node-js-and-mongodb-e0827cbbdafb
 hard - https://github.com/sitepoint-editors/MEAN-stack-authentication
-perfect - https://github.com/bbraithwaite/NorthwindNode
