@@ -22,3 +22,9 @@ The following is a list of topics I still need to add:
 - XMLHttpRequest
 - RxJS
 - lodash
+
+## Options for Case
+
+easy - https://github.com/Eslamunto/ProductsApp
+hard - https://github.com/sitepoint-editors/MEAN-stack-authentication
+perfect - https://github.com/bbraithwaite/NorthwindNode
