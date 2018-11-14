@@ -279,3 +279,17 @@ var difficult_tasks = tasks.filter(function (task) {
 // Using ES6
 var difficult_tasks = tasks.filter((task) => task.duration >= 120 );
 ```
+
+Code Formatting
+========================================================
+
+Human readable code need to have:
+
+- Clear variable and function names
+- Indenting, after `{`
+- Blank lines, to separate code blocks
+- Spacing after keywords, `,` and mathematical operators
+
+This is easier when using a ESLint [tool](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+After that sometimes **minification** is used to compress the code and transfer it faster on the Internet.

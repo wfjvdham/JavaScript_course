@@ -1,3 +1,29 @@
+The HTML DOM (Document Object Model)
+========================================================
+
+> When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The HTML DOM model is constructed as a tree of Objects:
+
+![DOM](pic_htmltree.gif)
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Page</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+</html>
+```
+
 Browser Events
 ========================================================
 
@@ -64,45 +90,67 @@ JavaScript can use the events in the following ways
 </script>
 ```
 
-The HTML DOM (Document Object Model)
+AJAX
 ========================================================
 
-> When a web page is loaded, the browser creates a Document Object Model of the page.
+> Asynchronous JavaScript And XML. With Ajax, Web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page
 
-The HTML DOM model is constructed as a tree of Objects:
+- The name is misleading, nowadays JSON documents can also be retrieved. 
 
-![DOM](pic_htmltree.gif)
+## XMLHttpRequest Object
+
+The object that you can use to make an AJAX call first needs to be created.
 
 ```
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>My First Page</h2>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = "Hello World!";
-</script>
-
-</body>
-</html>
+let xhttp = new XMLHttpRequest();
 ```
 
-Code Formatting
-========================================================
+## Send a Request
 
-Human readable code need to have:
+Using this object a request to a server can be send
 
-- Clear variable and function names
-- Indenting, after `{`
-- Blank lines, to separate code blocks
-- Spacing after keywords, `,` and mathematical operators
+```
+xhttp.open("GET", "ajax_info.txt", true);
+xhttp.send();
+```
 
-This is easier when using a ESLint [tool](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+### GET request
 
-After that sometimes **minification** is used to compress the code and transfer it faster on the Internet.
+- Can only contain a link
+- Can add some input but it needs to be added to the link so is not so secure
+- Does not allow caching
+
+### POST request
+
+- Combines a link with a body of the request
+- In the body large chunks of data can be send in a secure way
+- Caching is possible
+
+## Receive a Response
+
+```
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   document.getElementById("demo").innerHTML = this.responseText;
+  }
+};
+```
+
+- `onreadystatechange` Defines a function to be called when the readyState property changes
+
+- `readyState` can be on of the following values:
+  
+  - **0** request not initialized
+  - **1** server connection established
+  - **2** request received
+  - **3** processing request
+  - **4** request finished and response is ready
+
+- `status` can have many [values](https://www.w3schools.com/tags/ref_httpmessages.asp) but the most important are:
+
+  - **200** "OK"
+  - **403** "Forbidden"
+  - **404** "Page not found"
 
 jQuery
 ========================================================
