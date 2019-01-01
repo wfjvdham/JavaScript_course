@@ -280,6 +280,21 @@ var difficult_tasks = tasks.filter(function (task) {
 var difficult_tasks = tasks.filter((task) => task.duration >= 120 );
 ```
 
+`reduce`
+========================================================
+
+> Reduces an Array to a single value
+
+```
+var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+});
+// sum is 6
+
+// Using ES6
+var total = [ 0, 1, 2, 3 ].reduce(( accumulator, currentValue ) => accumulator + currentValue);
+```
+
 Code Formatting
 ========================================================
 
